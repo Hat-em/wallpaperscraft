@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	<meta charset="utf-8">
+	<meta name = "viewport" content = "width = device-width, initial-scale = 1">
+	<link rel="stylesheet" type="text/css" href="s.css">
+</head>
+<body style="background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(84,84,84,1) 50%, rgba(0,0,0,1) 100%); color:#fff475">
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#">Categories</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="register.html">Register</a></li>
+			<li style="margin-left: auto;"><a href="index.html"><strong>WallpapersCraft</strong></a></li>
+		</ul>
+	</nav>
+	<div class="container">
+		<form method="GET">
+		<p>First Name:</p> <input type="text" name="firstname"><br>
+		<p>Last Name:</p> <input type="text" name="lasttname"><br>
+		<p>Email:</p> <input type="email" name="email"><br>
+		<!-- Updated min to minlength (min is used only for range inputs. Visit here for more info: https://www.w3schools.com/tags/att_input_maxlength.asp) -->
+		<p>Password:</p> <input type="password" name="password" minLength="5"><br>
+		<p>Birthday:</p> <input type="date" name="birthday"><br>
+		<p>Gender:</p><br>
+		<p style="font-style: italic;">Male</p>
+        <p style="font-style: italic;">Female </p>
+        <p style="font-style: italic;">Other </p>
+        <br>
+		<input type="radio" name="gender" value="Male" style="float: left;  margin:5px 10px;">
+		<input type="radio" name="gender" value="Female" style="float: left;  margin:5px 40px;">	
+		<input type="radio" name="gender" value="Other" style="float: left;  margin:5px 30px;">
+		<br>
+		
+		
+		<input type="submit" value="Register!" id="regbutton">
+		<input type="reset" style="padding: 1px 12px; text-decoration: underline; margin-top: 50px;">
+	</form>
+	</div>
+	<div style="height: 800px;"></div>
+	<footer class="gridd footerr">
+		
+		<ul style="border-right: 1px solid #fff475;">
+			<li style="padding: 7px;"><a href="index.html">Home</a></li>
+			<li style="padding: 7px;"><a href="#">Categories</a></li>
+			<li style="padding: 7px;"><a href="#">About</a></li>
+			<li style="padding: 7px;"><a href="register.html">Register</a></li>
+		</ul>
+		<ul style="	border-right: 1px solid #fff475;">
+			<li><strong>Contact:</strong></li>
+			<li>tel:</li>
+			<p>000-22222-000</p>
+			<li>Mail:</li>
+			<p>anymail@gmail.com</p>
+			<li>Address:</li>
+			<p>st no. 1, buliding 1, cairo</p>
+		</ul>
+		<ul>
+			<li style="padding: 7px;"><a href="#">Best Backgrounds</a></li>
+			<li style="padding: 7px;"><a href="#">Our Collection</a></li>
+			<li style="padding: 7px;"><a href="#">Top 100</a></li>
+			<li style="padding: 7px;"><a href="#">Last Added</a></li>
+		</ul>
+	</footer>
+</body>
+</html>

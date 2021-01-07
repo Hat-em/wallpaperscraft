@@ -1,0 +1,182 @@
+*{
+	margin: 0px; 
+	font-family: comic sans ms;
+}
+body{background-color: #faf6d7;margin: 0px;}
+/*Nav Bar*/
+nav{
+	background-color: #141414;
+	border-bottom: 2px solid black;
+	padding: 10px;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 3px;
+}
+nav ul{
+	display: flex;
+	list-style: none;
+	padding-left: 0px;
+}
+nav ul li{
+	border: 1px solid #fff475;
+	border-radius: 4px;
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 1s;
+}
+nav ul li:hover{
+	background-color: #fff475;
+	transform: scale(1.15);
+	box-shadow: 0 4px 8px 0 rgba(100, 120, 90, 0.8), 0 6px 20px 0 rgba(160, 150, 100, 0.8);
+	border:2px solid #9910a3;
+}
+nav ul li a{
+	text-decoration: none;
+	color: #fff475;
+	padding: 5px 10px;
+}
+nav ul li a:hover{
+	color: #141414;
+}
+@media (max-width:635px){
+	nav ul li a{
+		font-size: 2.7vw 
+	}
+	nav ul li a{
+		padding: 3px;
+		margin-left: auto;
+	}
+}
+/*Cover Photo then Register Form*/
+.container{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0px;
+    padding-right: 0px;
+    position: relative;
+}
+.cvr {height: 60vh; width: 100%;}
+.cvrsection{
+	padding: 20px;
+	text-align: center;
+	background-image: radial-gradient(#fff475, #141414, black);
+}
+.cvrsection a{
+	background-color: #141414;
+	text-decoration: none;
+	color: #fff475;
+	padding: 10px 25px;
+	border-radius: 15px;
+	margin-left: 0px;
+	transition: all 1s;
+}
+.cvrsection a:hover{
+	border:2px solid #9910a3;
+	background-color: #fff475;
+	color: #141414;
+	transform: scale(1.25);
+	box-shadow: 0 4px 8px 0 rgba(100, 120, 90, 0.8), 0 6px 20px 0 rgba(160, 150, 100, 0.8);
+}
+/*form*/
+form{
+	background-color: #141414;
+	position: absolute;
+	top:50px;
+	height:70vh;
+	width: 60vh;
+	padding: 30px;
+	margin:20px;
+}
+form input{
+	float: right;
+	background-color: #fff475;
+	border: 2px solid #fff475;
+	margin: 10px 10px 5px 15px;
+	display: inline;
+}
+form input:hover{border:2px solid #9910a3;}
+form p{
+	display: inline-block;	
+	margin: 8px 10px 10px 15px;
+}
+#regbutton{
+	float: left; 
+	padding: 5px 10px; 
+	margin-top: 30px; 
+	font-size: 1.5rem;
+	transition: all 1s;
+}
+#regbutton:hover{
+	border:2px solid #9910a3;
+	background-color: #fff475;
+	color: #141414;
+	transform: scale(1.1);
+	box-shadow: 0 4px 8px 0 rgba(100, 120, 90, 0.8), 0 6px 20px 0 rgba(160, 150, 100, 0.8);
+}
+@media (max-height: 570px){
+	form{height: 120vh;}
+}
+@media (max-height: 428px){
+	form{height: 160vh;}
+}
+@media (max-height: 392px){
+	form{height: 190vh;}
+}
+/*Cards Grid*/
+.gridd{
+	  display: grid;
+	  grid-template-columns: repeat(auto-fill,minmax(300px,2fr));
+	  background-color: #141414;
+	  padding: 10px;
+	  grid-gap: 20px;
+}
+.card{
+	border:2px solid #fff475;
+	position: relative;
+	margin-bottom: 0px;
+	border-radius: 6px;
+	transition: all 0.5s;
+}
+.card p{
+	text-align: center;
+	color: #faf6d7;
+	background-color: rgba(26,26,26,0.7);
+	width: 100%;
+	font-size: 1.7vw;
+	position: absolute;
+	bottom: 0px;
+}
+@media (max-width:635px){.card p{font-size: 2.8vw;}}
+.card img{
+	width: 100%;
+	margin-bottom: -5px;
+}
+.card:hover{
+	transform: scale(1.1);
+	border:3px solid #9910a3;
+	box-shadow: 0 4px 8px 0 rgba(100, 120, 90, 0.8), 0 6px 20px 0 rgba(160, 150, 100, 0.8);
+}
+.footerr{
+	line-height: 1.5;
+	grid-template-columns: repeat(auto-fill, minmax(343px, 1fr));
+    grid-gap: 20px;
+    background-color: #141414;
+}
+footer ul{
+	list-style: none;
+	float: left;
+	margin-left: 20px;
+}
+footer ul li{
+	margin: 15px; color: #fff475;
+}
+footer p{margin: 0px 15px; padding: 0px 15px; font-size: 0.8rem; color: #fff475;}
+footer ul li a{
+	text-decoration: none;
+	color: #fff475;
+}
+footer ul li:hover{
+	text-shadow:5px 5px 10px #9910a3;;
+}
